@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import Navbar from "./Navbar";
 const Layout = ({ children }) => {
   return (
     <Wrapper>
+      <Navbar />
       <ContentWrapper>{children}</ContentWrapper>
     </Wrapper>
   );
@@ -18,8 +20,9 @@ const Wrapper = styled.div`
 
 const ContentWrapper = styled.div`
   margin: auto;
-  height: 200px;
-  width: 500px;
-  padding: 1rem;
+  max-width: 800px;
+  padding: 2rem;
   background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.25);
 `;

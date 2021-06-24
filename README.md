@@ -1,7 +1,19 @@
-# NextJS template with styled-components
+# Personal Website created with NextJs
 
-- CSS Reset applied.
+## 24 / 06 / 2021
 
-- styled components ready to use
+- About Me Section Finished
 
-- Layout components provided
+### TODO
+
+- Create About Me
+
+- Create Resume
+
+- Create My Works
+
+- Create Modal Contact Form
+
+- Create Modal Project Detail
+
+- Make Mobile Responsive
