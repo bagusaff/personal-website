@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Navbar from "./Navbar";
+import { motion } from "framer-motion";
 const Layout = ({ children }) => {
   return (
     <Wrapper>
@@ -21,6 +22,8 @@ const Wrapper = styled.div`
 const ContentWrapper = styled.div`
   margin: auto;
   max-width: 800px;
+  max-height: 600px;
+  overflow: auto;
   padding: 2rem;
   background-color: white;
   border-radius: 10px;

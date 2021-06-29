@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import {
   AiFillGithub,
   AiFillInstagram,
@@ -9,98 +10,146 @@ import {
 import { FaSteam } from "react-icons/fa";
 import Head from "next/head";
 import Image from "next/image";
+
+import {
+  wrapper,
+  item,
+  text,
+  social,
+  icon,
+} from "../components/Animations/index.animation";
 import Layout from "../components/layout";
 import img from "../public/images/21342.jpg";
+
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Welcome to Bagus' Hall Of Creation !</title>
+        <meta
+          title="description"
+          content="Bagus Amrullah Personal Portfolio Website"
+        />
+      </Head>
       <Layout>
-        <Title>About Me</Title>
-        <Wrapper>
-          <Left>
-            <Header>Howdy ! Welcome to my personal page.</Header>
-            <Header>
-              I’m Bagus Amrullah ,A Fullstack Javascript Developer based in
-              Yogyakarta, Indonesia.
-            </Header>
-            <Body>
-              With years of experience in building Web Apps, Mobile Apps and
-              Landing Page.
-            </Body>
-            <Body>
-              I enjoy create new things with{" "}
-              <strong>
-                React / React-Native , Redux, Express, NodeJs , MongoDB ,
-                Firebase , MySql.
-              </strong>
-            </Body>
-            <Body>
-              <strong>Figma, Adobe XD, Adobe Illustrator </strong>are some of
-              the design tools that helps me to create some of my works.
-            </Body>
-            <Body>
-              I love learning something new ! my goal is to make the world a
-              better place for everybody with the knowledge and skills that i
-              have.
-            </Body>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Title>About Me</Title>
+          <Wrapper initial="hidden" animate="show" variants={wrapper}>
+            <Left variants={item}>
+              <Header variants={text}>
+                Howdy ! Welcome to my personal page 😊
+              </Header>
+              <Header variants={text}>
+                I’m Bagus Amrullah ,A Fullstack Javascript Developer based in
+                Yogyakarta, Indonesia.
+              </Header>
+              <Body variants={text}>
+                With years of experience in building Web Apps, Mobile Apps and
+                Landing Page.
+              </Body>
+              <Body variants={text}>
+                I enjoy create new things with{" "}
+                <strong>
+                  React / React-Native , Redux, Express, NodeJs , MongoDB ,
+                  Firebase , MySql.
+                </strong>
+              </Body>
+              <Body variants={text}>
+                <strong>Figma, Adobe XD, Adobe Illustrator </strong>are some of
+                the design tools that helps me to create some of my works.
+              </Body>
+              <Body variants={text}>
+                I love learning something new ! my goal is to make the world a
+                better place for everybody with the knowledge and skills that i
+                have.
+              </Body>
 
-            <Header>Have any inquires or discussion ?</Header>
-            <ButtonWrapper>
-              <Button>Let's Talk!</Button>
-            </ButtonWrapper>
-          </Left>
-          <Right>
-            <Photos src={img} height={300} width={200} />
-            <Label>Stay Connected With Me!</Label>
-            <SocialWrapper>
-              <Link
-                href="https://www.linkedin.com/in/bagusamrullah/"
-                target="_blank"
-              >
-                <AiFillLinkedin size={"1.5rem"} />
-              </Link>
-              <Link href="https://github.com/bagusaff/" target="_blank">
-                <AiFillGithub size={"1.5rem"} />
-              </Link>
-              <Link href="https://twitter.com/bagusaff" target="_blank">
-                <AiOutlineTwitter size={"1.5rem"} />
-              </Link>
-              <Link href="https://medium.com/@bagusamrullah" target="_blank">
-                <AiFillMediumCircle size={"1.5rem"} />
-              </Link>
-              <Link
-                href="https://www.instagram.com/amrullahjuve"
-                target="_blank"
-              >
-                <AiFillInstagram size={"1.5rem"} />
-              </Link>
-              <Link
-                href="https://steamcommunity.com/id/akaamrullah/"
-                target="_blank"
-              >
-                <FaSteam size={"1.5rem"} />
-              </Link>
-            </SocialWrapper>
-          </Right>
-        </Wrapper>
+              <Header variants={text}>Have any inquires or discussion ?</Header>
+              <ButtonWrapper variants={text}>
+                <Button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                  Let's Talk!
+                </Button>
+              </ButtonWrapper>
+            </Left>
+            <Right variants={item}>
+              <Photos src={img} height={300} width={200} />
+              <Label>Stay Connected With Me!</Label>
+              <SocialWrapper variants={social}>
+                <Link
+                  variants={icon}
+                  whileHover={{ scale: 1.05 }}
+                  href="https://www.linkedin.com/in/bagusamrullah/"
+                  target="_blank"
+                >
+                  <AiFillLinkedin size={"1.5rem"} />
+                </Link>
+                <Link
+                  variants={icon}
+                  whileHover={{ scale: 1.05 }}
+                  href="https://github.com/bagusaff/"
+                  target="_blank"
+                >
+                  <AiFillGithub size={"1.5rem"} />
+                </Link>
+                <Link
+                  variants={icon}
+                  whileHover={{ scale: 1.05 }}
+                  href="https://twitter.com/bagusaff"
+                  target="_blank"
+                >
+                  <AiOutlineTwitter size={"1.5rem"} />
+                </Link>
+                <Link
+                  variants={icon}
+                  whileHover={{ scale: 1.05 }}
+                  href="https://medium.com/@bagusamrullah"
+                  target="_blank"
+                >
+                  <AiFillMediumCircle size={"1.5rem"} />
+                </Link>
+                <Link
+                  variants={icon}
+                  whileHover={{ scale: 1.05 }}
+                  href="https://www.instagram.com/amrullahjuve"
+                  target="_blank"
+                >
+                  <AiFillInstagram size={"1.5rem"} />
+                </Link>
+                <Link
+                  variants={icon}
+                  whileHover={{ scale: 1.05 }}
+                  href="https://steamcommunity.com/id/akaamrullah/"
+                  target="_blank"
+                >
+                  <FaSteam size={"1.5rem"} />
+                </Link>
+              </SocialWrapper>
+            </Right>
+          </Wrapper>
+        </motion.div>
       </Layout>
     </>
   );
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled(motion.div)`
   display: flex;
   flex-direction: row;
   padding-bottom: 1rem;
 `;
 
-const Left = styled.div`
+const Left = styled(motion.div)`
   display: grid;
   flex: 1;
   gap: 1rem;
 `;
 
-const Right = styled.div`
+const Right = styled(motion.div)`
   flex: 1;
   display: grid;
   flex-direction: column;
@@ -119,7 +168,7 @@ const Title = styled.h1`
   margin-bottom: 1rem;
 `;
 
-const Header = styled.h2`
+const Header = styled(motion.h2)`
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
@@ -128,7 +177,7 @@ const Header = styled.h2`
   color: #64748b;
 `;
 
-const Body = styled.p`
+const Body = styled(motion.p)`
   font-weight: normal;
   font-size: 14px;
   line-height: 1rem;
@@ -138,11 +187,11 @@ const Body = styled.p`
   }
 `;
 
-const ButtonWrapper = styled.div`
+const ButtonWrapper = styled(motion.div)`
   width: auto;
 `;
 
-const Button = styled.button`
+const Button = styled(motion.button)`
   cursor: pointer;
   background: linear-gradient(180deg, #2fb8ff 0%, #9eecd9 100%);
   border-radius: 1.5rem;
@@ -150,16 +199,12 @@ const Button = styled.button`
   color: white;
   font-weight: 600;
   border: 0.5px solid rgba(255, 255, 255, 0.6);
-  transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
-  :hover {
-    transform: scale(1.05);
-  }
 `;
 
 const Photos = styled(Image)`
   object-fit: cover;
-  border-radius: 200px;
-  border: 0.5px solid rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  border: 10px red;
 `;
 
 const Label = styled.p`
@@ -169,12 +214,12 @@ const Label = styled.p`
   font-size: 12px;
 `;
 
-const SocialWrapper = styled.div`
+const SocialWrapper = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(6, auto);
 `;
 
-const Link = styled.a`
+const Link = styled(motion.a)`
   color: #64748b;
   cursor: pointer;
   transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);

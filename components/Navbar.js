@@ -1,11 +1,19 @@
 import styled from "styled-components";
+import Link from "next/link";
+
 const Navbar = () => {
   return (
     <>
       <Wrapper>
-        <Link>About Me</Link>
-        <Link>Resume</Link>
-        <Link>My Works</Link>
+        <Link href="/">
+          <Links>About Me</Links>
+        </Link>
+        <Link href="/resume">
+          <Links>Resume</Links>
+        </Link>
+        <Link href="/my-work">
+          <Links>My Works</Links>
+        </Link>
       </Wrapper>
     </>
   );
@@ -18,14 +26,14 @@ const Wrapper = styled.div`
   grid-template-columns: auto auto auto;
   margin: auto;
   padding-top: 3rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   gap: 1rem;
   justify-content: flex-start;
   grid-auto-columns: min-content;
   width: 800px;
 `;
 
-const Link = styled.a`
+const Links = styled.a`
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
