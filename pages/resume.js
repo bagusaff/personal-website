@@ -7,7 +7,7 @@ import {
   wrapper,
   text,
 } from "../components/Animations/resume.animation";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import SuitcaseIcon from "../public/images/case.svg";
 import SchoolIcon from "../public/images/ion_school.svg";
 const Resume = () => {

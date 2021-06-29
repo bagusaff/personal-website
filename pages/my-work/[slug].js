@@ -10,7 +10,7 @@ import marked from "marked";
 
 import { BiArrowBack } from "react-icons/bi";
 
-import Layout from "../../components/layout";
+import Layout from "../../components/Layout";
 import styled from "styled-components";
 const ProjectDetail = ({ htmlString, data }) => {
   const banner = data.thumbnail;

@@ -6,7 +6,7 @@ import {
   text,
   list,
 } from "../../components/Animations/my-work.animation";
-import Layout from "../../components/layout";
+import Layout from "../../components/Layout";
 import { motion } from "framer-motion";
 import Card from "../../components/Card";
 import fs from "fs";

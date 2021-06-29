@@ -18,7 +18,7 @@ import {
   social,
   icon,
 } from "../components/Animations/index.animation";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import img from "../public/images/21342.jpg";
 
 export default function Home() {

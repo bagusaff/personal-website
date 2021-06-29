@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Navbar from "./Navbar";
-import { motion } from "framer-motion";
 const Layout = ({ children }) => {
   return (
     <Wrapper>
