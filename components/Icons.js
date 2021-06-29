@@ -1,4 +1,4 @@
-import { SiReact, SiGatsby } from "react-icons/si";
+import { SiReact, SiGatsby, SiNextDotJs } from "react-icons/si";
 import { DiNodejs, DiMongodb } from "react-icons/di";
 
 export const IconList = [

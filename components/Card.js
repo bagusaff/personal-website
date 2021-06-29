@@ -16,7 +16,7 @@ const Card = ({ post }) => {
     },
   };
   return (
-    <Link href={`/my-work/${post.slug}`}>
+    <Link href={`/my-work/${post.slug}`} passHref>
       <Wrapper variants={cards}>
         <Banner src={post.frontmatter.thumbnail} width={200} height={140} />
         <HoverCaption>

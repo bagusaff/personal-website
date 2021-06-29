@@ -31,7 +31,7 @@ const ProjectDetail = ({ htmlString, data }) => {
           <Banner src={banner} width={500} height={300} />
           <Title>{data.title}</Title>
           <Body>{data.type}</Body>
-          <Links href={data.link} target="_blank">
+          <Links href={data.link} target="_blank" passHref>
             {data.link}
           </Links>
           <Title>Description</Title>

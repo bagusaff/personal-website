@@ -5,13 +5,13 @@ const Navbar = () => {
   return (
     <>
       <Wrapper>
-        <Link href="/">
+        <Link href="/" passHref>
           <Links>About Me</Links>
         </Link>
-        <Link href="/resume">
+        <Link href="/resume" passHref>
           <Links>Resume</Links>
         </Link>
-        <Link href="/my-work">
+        <Link href="/my-work" passHref>
           <Links>My Works</Links>
         </Link>
       </Wrapper>

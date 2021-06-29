@@ -27,7 +27,12 @@ const Resume = () => {
           <Title>Resume</Title>
           <Wrapper variants={wrapper}>
             <HeaderWrapper>
-              <Image src={SchoolIcon} height={32} width={32} />
+              <Image
+                src={SchoolIcon}
+                height={32}
+                width={32}
+                alt="school icon"
+              />
               <Header>Education</Header>
             </HeaderWrapper>
             <ArticleWrapper>
@@ -73,7 +78,12 @@ const Resume = () => {
             </ArticleWrapper>
             {/* Work Experience */}
             <HeaderWrapper>
-              <Image src={SuitcaseIcon} height={30} width={30} />
+              <Image
+                src={SuitcaseIcon}
+                height={30}
+                width={30}
+                alt="workcase icon"
+              />
               <Header>Experience</Header>
             </HeaderWrapper>
             <ArticleWrapper>
