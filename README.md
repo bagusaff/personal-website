@@ -12,6 +12,12 @@
 
 - create project detail page with markdown files
 
+## 30 / 06 / 2021
+
+- Added Contact Form 
+
+- learn about next transpile modules
+
 ### TODO
 
 - Create About Me (done)
@@ -20,7 +26,7 @@
  
 - Create My Works (done)
  
-- Create Modal Contact Form 
+- Create Modal Contact Form (done)
 
 - Create Modal Project Detail (created another page instead)
 

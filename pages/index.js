@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import {
@@ -20,8 +21,14 @@ import {
 } from "../components/Animations/index.animation";
 import Layout from "../components/Layout";
 import img from "../public/images/21342.jpg";
+import ContactModal from "../components/ContactModal";
 
 export default function Home() {
+  const [openModal, setOpenModal] = useState(false);
+
+  const onOpenModal = () => setOpenModal(true);
+  const onCloseModal = () => setOpenModal(false);
+
   return (
     <>
       <Head>
@@ -39,6 +46,7 @@ export default function Home() {
           transition={{ duration: 0.5 }}
         >
           <Title>About Me</Title>
+          <ContactModal open={openModal} onCloseModal={onCloseModal} />
           <Wrapper initial="hidden" animate="show" variants={wrapper}>
             <Left variants={item}>
               <Header variants={text}>
@@ -71,7 +79,11 @@ export default function Home() {
 
               <Header variants={text}>Have any inquires or discussion ?</Header>
               <ButtonWrapper variants={text}>
-                <Button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={onOpenModal}
+                >
                   Let's Talk!
                 </Button>
               </ButtonWrapper>
