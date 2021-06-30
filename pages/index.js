@@ -73,7 +73,7 @@ export default function Home() {
               </Body>
               <Body variants={text}>
                 I love learning something new ! My goal is to make the world a
-                better place for everybody with the knowledge and skills that i
+                better place for everybody with the knowledge and skills that I
                 have.
               </Body>
 

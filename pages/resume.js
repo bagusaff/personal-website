@@ -15,7 +15,7 @@ const Resume = () => {
     <>
       <Head>
         <title>My Resume</title>
-        <meta title="description" content="Bagus Amrullah resume" />
+        <meta title="description" content="Bagus Amrullah Resume" />
       </Head>
       <Layout>
         <motion.div
@@ -40,18 +40,18 @@ const Resume = () => {
                 <ArticleHeader>SD N Kloposawit</ArticleHeader>
                 <ArticleDate>2004 - 2010</ArticleDate>
                 <ArticleBody>
-                  Entering Elementary School in 2004, i am able to complete all
-                  classes and gradute with the highest score along my classmate.
-                  This is the time where i started to know about computer and
-                  stuff.
+                  Entering Elementary School in 2004, I am able to complete all
+                  classes and graduate with the highest score along my
+                  classmate. This is the time where I started to know about
+                  computer and stuff.
                 </ArticleBody>
               </Article>
               <Article variants={text}>
                 <ArticleHeader>SMP N 1 Turi</ArticleHeader>
                 <ArticleDate>2010 - 2013</ArticleDate>
                 <ArticleBody>
-                  Competing againt more classmate and getting new friends, i
-                  successfully graduated as the top-10. Those time i started to
+                  Competing against more classmate and getting new friends, I
+                  successfully graduated as the top-10. Those time I started to
                   dig more into computer world.
                 </ArticleBody>
               </Article>
@@ -59,9 +59,9 @@ const Resume = () => {
                 <ArticleHeader>SMK N 2 Depok Sleman</ArticleHeader>
                 <ArticleDate>2013 - 2017</ArticleDate>
                 <ArticleBody>
-                  Managed to get into the best vocational school in town, i
+                  Managed to get into the best vocational school in town, I
                   choose Computer & Network Engineer study to help me develop my
-                  skills and hobby. Here i also managed to find so many friends
+                  skills and hobby. Here I also managed to find so many friends
                   with simillar interest.
                 </ArticleBody>
               </Article>
@@ -69,7 +69,7 @@ const Resume = () => {
                 <ArticleHeader>Universitas AMIKOM Yogyakarta</ArticleHeader>
                 <ArticleDate>2017 - 2021</ArticleDate>
                 <ArticleBody>
-                  Continuing to pursue my interest about computer, i joined a
+                  Continuing to pursue my interest about computer, I joined a
                   prestige university known for its informatics degree that help
                   me learn so much about programming and stuff. I successfully
                   got my bachelor degree with 3.61 GPA
@@ -106,7 +106,7 @@ const Resume = () => {
                 <ArticleDate>2019 - Now</ArticleDate>
                 <ArticleBody>
                   Established a startup with my friends , as a Fullstack
-                  Developer i gained a lot of experience about creating a
+                  Developer I gained a lot of experience about creating a
                   various type of Apps.
                 </ArticleBody>
               </Article>
