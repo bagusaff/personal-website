@@ -18,6 +18,7 @@
 
 - learn about next transpile modules
 
+- fully responsive
 ### TODO
 
 - Create About Me (done)
@@ -30,7 +31,7 @@
 
 - Create Modal Project Detail (created another page instead)
 
-- Make Mobile Responsive
+- Make Mobile Responsive (done)
 
 - Deploy to netlify
 

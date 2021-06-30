@@ -146,6 +146,15 @@ const Article = styled(motion.article)`
     height: 0.625rem;
     width: 0.625rem;
   }
+  @media (max-width: 576px) {
+    padding-bottom: 0.75rem;
+    &::before {
+      top: 1.3rem;
+      left: -0.335rem;
+      height: 0.5rem;
+      width: 0.5rem;
+    }
+  }
 `;
 
 const Title = styled.h1`
@@ -155,6 +164,9 @@ const Title = styled.h1`
   color: #1a202e;
   vertical-align: middle;
   margin-bottom: 1rem;
+  @media (max-width: 576px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Header = styled.h2`
@@ -162,6 +174,9 @@ const Header = styled.h2`
   font-size: 24px;
   padding-left: 10px;
   color: #64748b;
+  @media (max-width: 576px) {
+    font-size: 1.25rem;
+  }
 `;
 
 const HeaderWrapper = styled.div`
@@ -178,12 +193,18 @@ const ArticleHeader = styled.h5`
   font-size: 1.25rem;
   padding-top: 1rem;
   color: #64748b;
+  @media (max-width: 576px) {
+    font-size: 1rem;
+  }
 `;
 
 const ArticleDate = styled.span`
   font-weight: normal;
   font-size: 0.75rem;
   color: #64748b;
+  @media (max-width: 576px) {
+    font-size: 0.625rem;
+  }
 `;
 
 const ArticleBody = styled.p`
@@ -191,4 +212,8 @@ const ArticleBody = styled.p`
   font-size: 12px;
   color: #64748b;
   line-height: 1rem;
+  @media (max-width: 576px) {
+    font-size: 0.75rem;
+    text-align: justify;
+  }
 `;

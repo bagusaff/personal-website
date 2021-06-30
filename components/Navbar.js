@@ -22,15 +22,21 @@ const Navbar = () => {
 export default Navbar;
 
 const Wrapper = styled.div`
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
   margin: auto;
   padding-top: 3rem;
   padding-bottom: 2rem;
   gap: 1rem;
+  margin: 0 1rem;
+  align-self: center;
   justify-content: flex-start;
   grid-auto-columns: min-content;
-  width: 800px;
+  max-width: 800px;
+  width: 100%;
+  @media (max-width: 768px) {
+    gap: 0.875rem;
+    justify-content: center;
+  }
 `;
 
 const Links = styled.a`
@@ -41,5 +47,8 @@ const Links = styled.a`
   &:hover {
     color: #1a202e;
     text-decoration: underline #475569;
+  }
+  @media (max-width: 576px) {
+    font-size: 0.875rem;
   }
 `;

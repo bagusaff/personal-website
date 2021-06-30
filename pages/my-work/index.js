@@ -87,12 +87,19 @@ const Title = styled.h1`
   color: #1a202e;
   vertical-align: middle;
   margin-bottom: 1rem;
+  @media (max-width: 576px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const FilterWrapper = styled(motion.div)`
   display: grid;
   column-gap: 1rem;
   grid-template-columns: repeat(4, max-content);
+
+  @media (max-width: 320px) {
+    grid-template-columns: repeat(2, max-content);
+  }
 `;
 
 const FilterText = styled(motion.h2)`
@@ -107,6 +114,10 @@ const FilterText = styled(motion.h2)`
   :active {
     color: #1a202e;
   }
+  @media (max-width: 576px) {
+    font-size: 0.75rem;
+    padding-bottom: 0.5rem;
+  }
 `;
 
 const CardWrapper = styled(motion.div)`
@@ -114,4 +125,11 @@ const CardWrapper = styled(motion.div)`
   margin-top: 1rem;
   gap: 1rem;
   grid-template-columns: repeat(3, max-content);
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, max-content);
+  }
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(1, max-content);
+    justify-content: center;
+  }
 `;

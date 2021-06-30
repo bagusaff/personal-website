@@ -92,6 +92,16 @@ const Wrapper = styled.div`
     list-style-type: circle;
     list-style-position: inside;
   }
+  @media (max-width: 576px) {
+    p,
+    ul,
+    li {
+      font-weight: normal;
+      font-size: 0.875rem;
+      color: #64748b;
+      line-height: 1rem;
+    }
+  }
 `;
 
 const Banner = styled(Image)`
@@ -108,6 +118,9 @@ const Title = styled.h1`
   font-weight: 600;
   font-size: 1.5rem;
   color: #64748b;
+  @media (max-width: 576px) {
+    font-size: 1.125rem;
+  }
 `;
 
 const Links = styled.a`
@@ -127,8 +140,7 @@ const Body = styled.p`
   color: #64748b;
   line-height: 1.1rem;
   text-align: justify;
-`;
-
-const IconWrapper = styled.div`
-  display: flex;
+  @media (max-width: 576px) {
+    font-size: 0.875rem;
+  }
 `;

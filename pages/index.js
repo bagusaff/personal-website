@@ -153,6 +153,10 @@ const Wrapper = styled(motion.div)`
   display: flex;
   flex-direction: row;
   padding-bottom: 1rem;
+  @media (max-width: 576px) {
+    flex-direction: column;
+    gap: 1.125rem;
+  }
 `;
 
 const Left = styled(motion.div)`
@@ -166,7 +170,6 @@ const Right = styled(motion.div)`
   display: grid;
   flex-direction: column;
   width: 100%;
-  /* grid-template-rows: 300px auto auto; */
   justify-content: center;
   grid-auto-rows: min-content;
   row-gap: 10px;
@@ -178,6 +181,9 @@ const Title = styled.h1`
   line-height: 29px;
   color: #1a202e;
   margin-bottom: 1rem;
+  @media (max-width: 576px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Header = styled(motion.h2)`
@@ -187,15 +193,23 @@ const Header = styled(motion.h2)`
   line-height: 1.125rem;
   text-align: justify;
   color: #64748b;
+  @media (max-width: 576px) {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
 `;
 
 const Body = styled(motion.p)`
   font-weight: normal;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1rem;
   color: #64748b;
   strong {
     font-weight: 500;
+  }
+  @media (max-width: 576px) {
+    font-size: 0.75rem;
+    text-align: justify;
   }
 `;
 
@@ -211,6 +225,10 @@ const Button = styled(motion.button)`
   color: white;
   font-weight: 600;
   border: 0.5px solid rgba(255, 255, 255, 0.6);
+  @media (max-width: 576px) {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.875rem;
+  }
 `;
 
 const Photos = styled(Image)`
