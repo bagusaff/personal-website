@@ -53,7 +53,7 @@ export default function Home() {
                 Howdy ! Welcome to my personal page 😊
               </Header>
               <Header variants={text}>
-                I’m Bagus Amrullah ,A Fullstack Javascript Developer based in
+                I’m Bagus Amrullah, A Fullstack Javascript Developer based in
                 Yogyakarta, Indonesia.
               </Header>
               <Body variants={text}>
@@ -63,16 +63,16 @@ export default function Home() {
               <Body variants={text}>
                 I enjoy create new things with{" "}
                 <strong>
-                  React / React-Native , Redux, Express, NodeJs , MongoDB ,
-                  Firebase , MySql.
+                  React / React-Native, Redux, Express, NodeJs, MongoDB,
+                  Firebase, MySql.
                 </strong>
               </Body>
               <Body variants={text}>
                 <strong>Figma, Adobe XD, Adobe Illustrator </strong>are some of
-                the design tools that helps me to create some of my works.
+                the design tools that help me to create some of my works.
               </Body>
               <Body variants={text}>
-                I love learning something new ! my goal is to make the world a
+                I love learning something new ! My goal is to make the world a
                 better place for everybody with the knowledge and skills that i
                 have.
               </Body>

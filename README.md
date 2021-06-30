@@ -19,6 +19,7 @@
 - learn about next transpile modules
 
 - fully responsive
+
 ### TODO
 
 - Create About Me (done)

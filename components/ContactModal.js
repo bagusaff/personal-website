@@ -63,7 +63,7 @@ const ContactModal = ({ open, onCloseModal }) => {
         <ToastContainer />
         <Title>CONTACT ME</Title>
         <SecondTitle>
-          I will reply contact you back via email as soon as possible!
+          I will contact you back via email as soon as possible!
         </SecondTitle>
         <Header type="Name:">
           <Input
