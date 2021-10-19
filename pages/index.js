@@ -20,7 +20,7 @@ import {
   icon,
 } from "../components/Animations/index.animation";
 import Layout from "../components/Layout";
-import img from "../public/images/21342.jpg";
+import img from "../public/images/243232.jpeg";
 import ContactModal from "../components/ContactModal";
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
   const onCloseModal = () => setOpenModal(false);
 
   return (
-    <>
+    <motion.div>
       <Head>
         <title>Welcome to Bagus' Hall Of Creation !</title>
         <meta
@@ -145,7 +145,7 @@ export default function Home() {
           </Wrapper>
         </motion.div>
       </Layout>
-    </>
+    </motion.div>
   );
 }
 

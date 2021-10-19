@@ -50,9 +50,9 @@ const Resume = () => {
                 <ArticleHeader>SMP N 1 Turi</ArticleHeader>
                 <ArticleDate>2010 - 2013</ArticleDate>
                 <ArticleBody>
-                  Competing against more classmate and getting new friends, I
-                  successfully graduated as the top-10. Those time I started to
-                  dig more into computer world.
+                  Competing against more classmate, I successfully graduated as
+                  the top-10. Those time I started to dig more into computer
+                  world.
                 </ArticleBody>
               </Article>
               <Article variants={text}>
@@ -60,19 +60,19 @@ const Resume = () => {
                 <ArticleDate>2013 - 2017</ArticleDate>
                 <ArticleBody>
                   Managed to get into the best vocational school in town, I
-                  choose Computer & Network Engineer study to help me develop my
+                  chose Computer & Network Engineering to help me develop my
                   skills and hobby. Here I also managed to find so many friends
-                  with simillar interest.
+                  with similar interests.
                 </ArticleBody>
               </Article>
               <Article variants={text}>
                 <ArticleHeader>Universitas AMIKOM Yogyakarta</ArticleHeader>
                 <ArticleDate>2017 - 2021</ArticleDate>
                 <ArticleBody>
-                  Continuing to pursue my interest about computer, I joined a
-                  prestige university known for its informatics degree that help
-                  me learn so much about programming and stuff. I successfully
-                  got my bachelor degree with 3.61 GPA
+                  Continued pursuing my interest in computers, I joined a
+                  prestigious university known for its informatics degree that
+                  helps me learn so much about programming and stuff. I
+                  successfully got my bachelor's degree with a GPA of 3.61.
                 </ArticleBody>
               </Article>
             </ArticleWrapper>

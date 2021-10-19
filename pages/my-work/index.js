@@ -13,7 +13,30 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Head from "next/head";
+const filterData = [
+  {
+    id: 1,
+    filter: "",
+    displayText: "All",
+  },
+  {
+    id: 2,
+    filter: "Web Apps",
+    displayText: "Web Apps",
+  },
+  {
+    id: 3,
+    filter: "Mobile Apps",
+    displayText: "Mobile Apps",
+  },
+  {
+    id: 4,
+    filter: "Landing Page",
+    displayText: "Landing Page",
+  },
+];
 const MyWork = ({ posts }) => {
+  const [category, setCategory] = useState("");
   return (
     <>
       <Head>
@@ -30,15 +53,25 @@ const MyWork = ({ posts }) => {
           <Wrapper initial="hidden" animate="show" variants={wrapper}>
             <Title>My Works</Title>
             <FilterWrapper variants={filter}>
-              <FilterText variants={text}>All</FilterText>
-              <FilterText variants={text}>Web Apps</FilterText>
-              <FilterText variants={text}>Mobile Apps</FilterText>
-              <FilterText variants={text}>Landing Page</FilterText>
+              {filterData.map((data) => (
+                <FilterText
+                  key={data.id}
+                  variants={text}
+                  onClick={() => {
+                    setCategory(data.filter);
+                  }}
+                  className={category == data.filter ? "active" : ""}
+                >
+                  {data.displayText}
+                </FilterText>
+              ))}
             </FilterWrapper>
             <CardWrapper variants={list}>
-              {posts.map((post, index) => (
-                <Card key={index} post={post} />
-              ))}
+              {posts
+                .filter((post) => post.frontmatter.type.includes(category))
+                .map((post, index) => (
+                  <Card key={index} post={post} />
+                ))}
             </CardWrapper>
           </Wrapper>
         </motion.div>
@@ -111,7 +144,7 @@ const FilterText = styled(motion.h2)`
   :hover {
     color: #1a202e;
   }
-  :active {
+  &.active {
     color: #1a202e;
   }
   @media (max-width: 576px) {
@@ -125,6 +158,10 @@ const CardWrapper = styled(motion.div)`
   margin-top: 1rem;
   gap: 1rem;
   grid-template-columns: repeat(3, max-content);
+  @media (min-width: 800px) {
+    min-width: 750px;
+    min-height: 350px;
+  }
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, max-content);
   }

@@ -20,6 +20,14 @@
 
 - fully responsive
 
+## 19 / 10 / 2021
+
+- Functionate filter buttons
+
+- Add more project
+
+- Adjust Wrapper minimum size
+
 ### TODO
 
 - Create About Me (done)
@@ -34,8 +42,8 @@
 
 - Make Mobile Responsive (done)
 
-- Deploy to netlify
+- Deploy to netlify ( done )
 
-- Add custom domain
+- Add custom domain ( done )
 
-- Finish all framer motion
+- Finish all framer motion ( done )

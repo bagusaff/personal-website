@@ -3,7 +3,7 @@ title: Rembux Landing Page
 description: "Rembux is a softwarehouse startup based on Yogyakarta , ID which offer an amazing services for whom need to create a Web Apps / Mobile Apps / Landing Page. They provide interesting service like pay as you like which mean the customer decide its own price"
 link: "http://rembux.netlify.app"
 type: Landing Page
-technology: React, Gatsby, NodeJS, MongoDB
+technology: React, Javascript, Figma, Gatsby, NodeJS, MongoDB.
 thumbnail: '/images/posts/rembux-landing-page.png'
 ---
 

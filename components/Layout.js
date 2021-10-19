@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Navbar from "./Navbar";
+import { motion } from "framer-motion";
 const Layout = ({ children }) => {
   return (
     <Wrapper>
@@ -7,7 +8,7 @@ const Layout = ({ children }) => {
       <ContentWrapper>{children}</ContentWrapper>
       <FooterArea>
         <FooterText>
-          Copyright @ 2021 Created with ❤️ by Bagus Amrullah
+          Copyright © 2021 Developed with ❤️ by Bagus Amrullah
         </FooterText>
       </FooterArea>
     </Wrapper>
@@ -16,7 +17,7 @@ const Layout = ({ children }) => {
 
 export default Layout;
 
-const Wrapper = styled.div`
+const Wrapper = styled(motion.div)`
   background-color: #e2e8f0;
   width: 100vw;
   height: 100vh;
@@ -26,7 +27,7 @@ const Wrapper = styled.div`
   justify-content: flex-start;
 `;
 
-const ContentWrapper = styled.div`
+const ContentWrapper = styled(motion.div)`
   align-self: center;
   width: auto;
   max-width: 800px;
@@ -39,7 +40,7 @@ const ContentWrapper = styled.div`
   box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.25);
 `;
 
-const FooterArea = styled.div`
+const FooterArea = styled(motion.div)`
   margin: 0 1rem;
   padding: 1rem 0;
   @media (max-width: 576px) {

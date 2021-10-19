@@ -1,18 +1,25 @@
 import styled from "styled-components";
 import Link from "next/link";
-
+import { useRouter } from "next/router";
 const Navbar = () => {
+  const router = useRouter();
   return (
     <>
       <Wrapper>
         <Link href="/" passHref>
-          <Links>About Me</Links>
+          <Links className={router.pathname == "/" ? "active" : ""}>
+            About Me
+          </Links>
         </Link>
         <Link href="/resume" passHref>
-          <Links>Resume</Links>
+          <Links className={router.pathname == "/resume" ? "active" : ""}>
+            Resume
+          </Links>
         </Link>
         <Link href="/my-work" passHref>
-          <Links>My Works</Links>
+          <Links className={router.pathname == "/my-work" ? "active" : ""}>
+            My Works
+          </Links>
         </Link>
       </Wrapper>
     </>
@@ -50,5 +57,8 @@ const Links = styled.a`
   }
   @media (max-width: 576px) {
     font-size: 0.875rem;
+  }
+  &.active {
+    color: #1a202e;
   }
 `;
