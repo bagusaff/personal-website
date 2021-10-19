@@ -61,7 +61,7 @@ export default function Home() {
                 Landing Page.
               </Body>
               <Body variants={text}>
-                I enjoy create new things with{" "}
+                I enjoy creating new things with{" "}
                 <strong>
                   React / React-Native, Redux, Express, NodeJs, MongoDB,
                   Firebase, MySql.
