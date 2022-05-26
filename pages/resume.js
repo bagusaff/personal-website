@@ -112,6 +112,18 @@ const Resume = () => {
               </Article>
               <Article variants={text}>
                 <ArticleHeader>
+                  Freelance NodeJS Backend Developer at PT Atas Kiri Digital
+                </ArticleHeader>
+                <ArticleDate>2021 ( 2 Months )</ArticleDate>
+                <ArticleBody>
+                  I got the opportunity to join the backend team for a company.
+                  Even though I only have the status as a freelancer, I get many
+                  benefits regarding software development, especially as a fresh
+                  graduate.
+                </ArticleBody>
+              </Article>
+              <Article variants={text}>
+                <ArticleHeader>
                   React Native Developer at Erloom / Codr
                 </ArticleHeader>
                 <ArticleDate>2021 - Now</ArticleDate>
