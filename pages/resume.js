@@ -110,6 +110,17 @@ const Resume = () => {
                   various type of Apps.
                 </ArticleBody>
               </Article>
+              <Article variants={text}>
+                <ArticleHeader>
+                  React Native Developer at Erloom / Codr
+                </ArticleHeader>
+                <ArticleDate>2021 - Now</ArticleDate>
+                <ArticleBody>
+                  To be a part of a fast growing company is an honor for me.
+                  Here I joined the team that developed various kinds of
+                  applications which taught me a lot along the way.
+                </ArticleBody>
+              </Article>
             </ArticleWrapper>
           </Wrapper>
         </motion.div>

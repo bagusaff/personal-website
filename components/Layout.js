@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
       <ContentWrapper>{children}</ContentWrapper>
       <FooterArea>
         <FooterText>
-          Copyright © 2021 Developed with ❤️ by Bagus Amrullah
+          Copyright © 2022 Developed with ❤️ by Bagus Amrullah
         </FooterText>
       </FooterArea>
     </Wrapper>

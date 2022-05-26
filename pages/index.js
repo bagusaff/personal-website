@@ -20,7 +20,7 @@ import {
   icon,
 } from "../components/Animations/index.animation";
 import Layout from "../components/Layout";
-import img from "../public/images/243232.jpeg";
+import img from "../public/images/avatar_new.jpeg";
 import ContactModal from "../components/ContactModal";
 
 export default function Home() {
@@ -89,7 +89,7 @@ export default function Home() {
               </ButtonWrapper>
             </Left>
             <Right variants={item}>
-              <Photos src={img} height={300} width={200} />
+              <Photos src={img} height={300} width={200} objectFit />
               <Label>Stay Connected With Me!</Label>
               <SocialWrapper variants={social}>
                 <Link
@@ -127,7 +127,7 @@ export default function Home() {
                 <Link
                   variants={icon}
                   whileHover={{ scale: 1.05 }}
-                  href="https://www.instagram.com/amrullahjuve"
+                  href="https://www.instagram.com/bgvsf"
                   target="_blank"
                 >
                   <AiFillInstagram size={"1.5rem"} />
